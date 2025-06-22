@@ -4,7 +4,6 @@ from pydantic import BaseModel
 import os
 import requests
 import tempfile
-from groq import Groq
 from dotenv import load_dotenv
 from fastapi.responses import JSONResponse
 import json
@@ -28,8 +27,8 @@ HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 HUGGINGFACE_URL = "https://api-inference.huggingface.co/models/j-hartmann/emotion-english-distilroberta-base"
 
 # Groq setup for story generation and transcription
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-client = Groq(api_key=GROQ_API_KEY)
+LLm_API_KEY = os.getenv("LLm_API_KEY")
+client = OpenAi(api_key=LLm_API_KEY)
 
 @app.post("/api/process-dream")
 async def process_dream(
@@ -44,13 +43,13 @@ async def process_dream(
     
     # Check if API keys are available
     if not GROQ_API_KEY:
-        print("❌ GROQ_API_KEY not found in environment")
-        raise HTTPException(status_code=500, detail="GROQ API key not configured")
+        print("❌API_KEY not found in environment")
+        raise HTTPException(status_code=500, detail=" API key not configured")
     
     if not HUGGINGFACE_API_KEY:
         print("⚠️ HUGGINGFACE_API_KEY not found, will use fallback emotions")
 
-    # Step 1: Transcribe the audio using Groq's Whisper
+    # Step 1: Transcribe the audio using  Whisper
     try:
         # Read the audio file
         audio_bytes = await audio.read()
@@ -66,8 +65,8 @@ async def process_dream(
             temp_file_path = temp_file.name
             print(f"💾 Saved audio to temp file: {temp_file_path}")
 
-        # Use Groq's Whisper API for transcription
-        print("🎯 Calling Groq Whisper API...")
+        # Use Whisper API for transcription
+        print("🎯 Calling  Whisper API...")
         with open(temp_file_path, "rb") as audio_file:
             transcription = client.audio.transcriptions.create(
                 file=audio_file,
@@ -137,7 +136,7 @@ async def process_dream(
         dominant_emotion = "mysterious"
         secondary_emotion = "contemplative"
 
-    # Step 3: Generate story using Groq LLM
+    # Step 3: Generate story using  LLM
     try:
         print("📖 Generating story with LLM...")
         # Create a more detailed prompt based on style
