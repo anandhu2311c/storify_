@@ -37,13 +37,12 @@
 
 ---
 
-| ![Screenshot 1](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/1.png?raw=true) |
-| ![Screenshot 2](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/2.png?raw=true) |
-| ![Screenshot 3](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/6.png?raw=true) |
-| ![Screenshot 4](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/4.png?raw=true) |
-| ![Screenshot 5](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/5.png?raw=true) |
-| ![Screenshot 6](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/6.png?raw=true) |
-| ![Screenshot 7](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/7.png?raw=true) |
+ ![Screenshot 1](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/1.png?raw=true) 
+ ![Screenshot 2](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/2.png?raw=true) 
+ ![Screenshot 4](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/4.png?raw=true) 
+ ![Screenshot 5](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/5.png?raw=true) 
+ ![Screenshot 6](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/6.png?raw=true) 
+ ![Screenshot 7](https://github.com/anandhu2311c/storify_/blob/1a54f21d87f16e2f46277c51319089427f0d5ae4/images/7.png?raw=true) 
 
 ---
 
