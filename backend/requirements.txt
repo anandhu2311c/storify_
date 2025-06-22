@@ -1,0 +1,32 @@
+# FastAPI and ASGI server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# File upload handling
+python-multipart==0.0.6
+
+# HTTP requests
+requests==2.31.0
+
+# AI/ML APIs
+groq==0.4.1
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Data validation
+pydantic==2.5.0
+
+# CORS middleware (included with FastAPI but good to be explicit)
+# fastapi already includes starlette which has CORS
+
+# Optional: If you want to add audio processing capabilities later
+# librosa==0.10.1
+# soundfile==0.12.1
+
+# Optional: For better audio format support
+# pydub==0.25.1
+
+# Development dependencies (optional)
+# pytest==7.4.3
+# pytest-asyncio==0.21.1
